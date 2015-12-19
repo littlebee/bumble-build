@@ -1,0 +1,68 @@
+{
+  "name": "bumble-build",
+  "version": "0.1.0",
+  "description": "A build setup using grunt, webpack, bumble-docs, bumble-test, ... that proabably will not work with your code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/littlebee/bumble-build.git"
+  },
+  "keywords": [
+    "grunt",
+    "webpack",
+    "coffee-script",
+    "coffee",
+    "bumble-test",
+    "bumble-docs",
+    "react"
+  ],
+  "author": "Bee Wilkerson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/littlebee/bumble-build/issues"
+  },
+  "homepage": "https://github.com/littlebee/bumble-build",
+  "dependencies": {
+    "babel-core": "^6.1.21",
+    "babel-loader": "^6.1.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "bumble-docs": "^0.2.0",
+    "bumble-test": "^0.1.1",
+    "cjsx-loader": "^2.0.1",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.10.0",
+    "css-loader": "^0.21.0",
+    "exports-loader": "^0.6.2",
+    "expose-loader": "^0.7.0",
+    "file-loader": "^0.8.4",
+    "glob": "^6.0.1",
+    "grunt": "^0.4.5",
+    "grunt-available-tasks": "^0.6.1",
+    "grunt-cli": "~0.1.13",
+    "grunt-coffee-react": "^2.4.1",
+    "grunt-contrib-clean": "0.6.0",
+    "grunt-contrib-coffee": "0.12.0",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-newer": "1.1.0",
+    "grunt-react": "^0.12.3",
+    "grunt-scp": "^0.1.8",
+    "grunt-shell": "^1.1.2",
+    "grunt-sync": "^0.4.1",
+    "grunt-webpack": "^1.0.11",
+    "imports-loader": "^0.6.5",
+    "inflection": "^1.8.0",
+    "jsx-loader": "^0.13.2",
+    "load-grunt-tasks": "^3.3.0",
+    "lodash": "^3.10.1",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "devDependencies": {}
+}
