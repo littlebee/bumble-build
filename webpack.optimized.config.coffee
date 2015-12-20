@@ -12,11 +12,13 @@ baseConfig = require('./webpack.config')
 
 userConfigFile = './__webpack.optimized.config'
 userConfig = if fs.existsSync(userConfigFile) then require(userConfigFile) else {}
+# assume run from project root this the user of this package's package
+userPackage = JSON.parse(fs.readFileSync('package.json'))
 
 optimizedConfig =
   debug: false,
   output:
-    filename: "react-datum.min.js"
+    filename: "#{userPackage.name}.min.js"
   plugins: baseConfig.plugins.concat [
     new Webpack.optimize.DedupePlugin(),
     new Webpack.optimize.UglifyJsPlugin(
