@@ -16,7 +16,6 @@ bumbleScriptCommand = (scriptFile, args="")->
   return "coffee #{Path.join(BUMBLE_DOCS_SCRIPTS, scriptFile)} #{args}"
 
 
-
 module.exports = (grunt, initConfig={}) ->
   
   # load plugins

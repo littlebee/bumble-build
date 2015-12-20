@@ -28,6 +28,10 @@ module.exports = (grunt) -> BumbleBuild.gruntConfig grunt,
       shorthandCompacting
 ```
 
+## package.json
+
+The **name** attribute from your package.json is used for nameing distribution files created by webpack.  The camel cased name attribute from package.json is also used as the default output.library for webpack config.  The **main** attribute from package.json file is used as default **entry** for webpack config.  
+
 ## webpack.\*.config
 
 You can override specific webpack configuration details by providing a webpack.config.coffee or webpack.config.js file in your project root directory.   Your webpack.config file only need specify the things you want in addition to, or to override from bumble-build webpack config.
@@ -35,6 +39,21 @@ You can override specific webpack configuration details by providing a webpack.c
 Currently, bumble-build looks for the following webpack config files:
 webpack.config.(js|coffee) - the base unoptimized configuration
 webpack.optimized.config.(js|coffee) - the minified & optimized configuration 
+
+Example, specify a different set of entry points for webpack (in file named webpack.config.js in your project root):
+```javascript
+// I need webpack hot loading now, damnit!  (coming soon)
+module.exports = {
+  entry: [
+    "webpack-dev-server/client?http://localhost:3000",  
+    "webpack/hot/only-dev-server",
+    "./myAwesomePackage.js"          // My app / package main set of module.exports
+  ]
+}
+```
+
+
+
 
 
 

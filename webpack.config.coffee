@@ -13,7 +13,6 @@ Webpack = require("webpack")
 Inflection = require('inflection')
 
 
-
 # assume run from project root this the user of this package's package
 userPackage = JSON.parse(fs.readFileSync('package.json'))
 
@@ -32,7 +31,7 @@ module.exports = _.defaultsDeep userConfig,
   entry: [
     # "webpack-dev-server/client?http://localhost:3000", # WebpackDevServer host and port
     # "webpack/hot/only-dev-server",
-    "./src/index" # Main app"s entry point
+    "./#{userPackage.main}" # Main app"s entry point
   ],
   output:
     path: "dist/"
