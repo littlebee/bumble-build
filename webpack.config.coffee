@@ -37,7 +37,7 @@ module.exports = _.defaultsDeep userConfig,
     path: "dist/"
     filename: "#{userPackage.name}.js"
     libraryTarget: "umd"
-    library: Inflection.camelize(userPackage.name, false)
+    library: Inflection.camelize(userPackage.name.replace(/[ \-]/g, "_"), false)
     publicPath: "dist/"
   externals:
     "jquery": "jQuery"

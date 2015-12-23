@@ -11,7 +11,7 @@ Path = require('path')
 _ = require('lodash')
 
 
-BUMBLE_DOCS_SCRIPTS = './node_modules/bumble-docs/scripts/'
+BUMBLE_DOCS_SCRIPTS = './node_modules/bumble-build/node_modules/bumble-docs/bin/'
 bumbleScriptCommand = (scriptFile, args="")-> 
   return "coffee #{Path.join(BUMBLE_DOCS_SCRIPTS, scriptFile)} #{args}"
 
