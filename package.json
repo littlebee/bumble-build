@@ -1,6 +1,6 @@
 {
   "name": "bumble-build",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A build setup using grunt, webpack, bumble-docs, bumble-test, ... that proabably will not work with your code.",
   "main": "index.js",
   "scripts": {
