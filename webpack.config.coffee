@@ -39,14 +39,45 @@ module.exports = _.defaultsDeep userConfig,
     libraryTarget: "umd"
     library: Inflection.camelize(userPackage.name.replace(/[ \-]/g, "_"), false)
     publicPath: "dist/"
-  externals:
-    "jquery": "jQuery"
-    "backbone": "Backbone"
-    "underscore": "_"
-    "react": "React"
-    "react-dom": "ReactDOM"
-    "react-bootstrap": "Rbs"
-
+  externals: [
+    {
+      'jquery': {
+        root: 'jQuery'
+        commonjs2: 'jquery',
+        commonjs: 'jquery',
+        amd: 'jquery'
+      }
+    },{
+      'react': {
+        root: 'React',
+        commonjs2: 'react',
+        commonjs: 'react',
+        amd: 'react'
+      }
+    },{
+      'react-dom': {
+        root: 'ReactDOM',
+        commonjs2: 'react-dom',
+        commonjs: 'react-dom',
+        amd: 'react-dom'
+      }
+    },{
+      'backbone': {
+        root: "Backbone"
+        commonjs2: 'backbone'
+        commonjs: 'backbone'
+        amd: 'backbone'
+      }
+    },{
+      'underscore': {
+        root: "_"
+        commonjs2: '_'
+        commonjs: '_'
+        amd: '_'
+      }
+    }
+  ]
+    
   debug: true,
 
   resolve:
@@ -111,12 +142,6 @@ module.exports = _.defaultsDeep userConfig,
     # #  this adds a lot of code to the bundle for hot loading feature
     # new Webpack.HotModuleReplacementPlugin()
 
-    # We will probably need this plugin at some point
-    # new Webpack.ProvidePlugin
-    #   React: "react"
-    #   jQuery: "jquery"
-    #   $: "jquery"
-    #   "window.jQuery": "jquery"      
 
     ## I think this and changing the debug setting above to `debug: false` above are all that
     ##   should be needed to produce an optimized minified package

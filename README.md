@@ -3,8 +3,12 @@
 ## Installation
 
 **Install from NPM:**
+
 ```bash
+
 npm install --save-dev bumble-build 
+node_modules/bumble-build/bin/init.coffee
+
 ```
 
 A build setup using grunt, webpack, [bumble-docs](https://github.com/littlebee/bumble-docs), [bumble-test](https://github.com/littlebee/bumble-test), ... that proabably will not work with your code.
@@ -15,44 +19,17 @@ See react-datum [grunt file](https://github.com/zulily/react-datum/blob/master/G
 
 See [bumble-docs](https://github.com/littlebee/bumble-docs) for information on documentation generator used.
 
-## Convention over Configuration
-
-No preaching, but we assume some defaults about the locations of things and if everyone at least put things in the same place, ....
-
-\(from project root\)
-|path or file       | content description                                     |         
-|docs/      | Generated documentation goes here. Some directories in here will be wiped by running `grunt clean` |
-|dist/      | Generated webpack bundles go here
-|src/       | Source code for app or package |
-|examples/  | Source code for examples that get included in static docs. see [bumble-docs]|
-|index.js   | This file is the default entry point for the package and resulting webpack.  You can change by updating `main` in your package.json|
-|
-
-
 ## Grunt
 
-** You must create a Gruntfile(.coffee|.js)** file in your project root.  Grunt will load this file when run and should export a function that accepts a grunt object that is called on when a grunt task is executed.
-
-See also the [Grunt Getting Started](http://gruntjs.com/getting-started) for more information on grunt.  You shouldn't need to install the grunt npm package or any of the grunt plugin's installed by bumble-build.  Search for `grunt-` in the [bumble-build package.json](https://github.com/littlebee/bumble-build/blob/master/package.json).
+See also the [Grunt Getting Started](http://gruntjs.com/getting-started) for more information on grunt.  The init.coffee script will install all of the necessary npm packages except:
 
 ** You must install grunt-cli globally **
 ```bash
 sudo npm install -g grunt-cli
 ```
-As I said above, you shouldn't need to include any of the package.json dependencies mentioned in the Grunt getting started page, but the grunt cli enables command line building.  
 
-### Super Simple Setup (said with a lisp)
 
-Create Gruntfile.coffee (or .js) in your project root:
-
-```coffee-script
-# my Gruntfile.coffee
-
-BumbleBuild = require('bumble-build')
-module.exports = (grunt) -> BumbleBuild.gruntConfig(grunt)
-```
-
-Then, wait, that's it!  Well, it will get you started anyway.  With this simple setup, assuming you installed grunt-cli globally, you can build the webpack modules at this point:
+You can 
 
 ```bash
 grunt build
@@ -90,6 +67,19 @@ module.exports = (grunt) -> BumbleBuild.gruntConfig grunt,
     options: 
       shorthandCompacting
 ```
+
+## Convention 
+We assume some defaults about the locations of things and if everyone at least put things in the same place, ....
+
+from project root:
+
+|path or file|content description|         
+|docs/      | Generated documentation goesa here. Some directories in here will be wiped by running `grunt clean` |
+|dist/      | Generated webpack bundles go here
+|src/       | Source code for app or package |
+|examples/  | Source code for examples that get included in static docs. see [bumble-docs]|
+|index.js   | This file is the default entry point for the package and resulting webpack. |
+|package.json| see next section |
 
 ## package.json
 
