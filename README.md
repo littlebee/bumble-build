@@ -78,6 +78,7 @@ from project root:
 |dist/      | Generated webpack bundles go here
 |src/       | Source code for app or package |
 |examples/  | Source code for examples that get included in static docs. see [bumble-docs]|
+|test/      | Mocha tests for app |  
 |index.js   | This file is the default entry point for the package and resulting webpack. |
 |package.json| see next section |
 
