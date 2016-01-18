@@ -60,13 +60,27 @@ watch   >  Watch for changing files and calls build. Also watches examples and d
 you can also get more fancy and make modifications / additions to the standard config:
 ```coffee-script
 # my Gruntfile.coffee
-
 BumbleBuild = require('bumble-build')
-module.exports = (grunt) -> BumbleBuild.gruntConfig grunt, 
-  cssmin: 
-    options: 
-      shorthandCompacting
+
+module.exports = (grunt) -> 
+  bbConfig = BumbleBuild.gruntConfig(grunt)
+  
+  shellConfig = grunt.config.get('shell')
+  shellConfig.distrib = ``
+    command: 'coffee -o lib/ src/'
+
+  grunt.config.set('shell', shellConfig)
+
+  # we don't need no stinking webpack
+  grunt.registerTask 'distrib', ['shell:distrib']```
 ```
+
+## tests
+
+Any .coffee or .cjsx files found in the `test/` directory are assumed to be Mocha Chai compatible tests and are run when `grunt test` is executed. 
+
+Any files in subfolders named '...lib/...' are ignored.   
+
 
 ## Convention 
 We assume some defaults about the locations of things and if everyone at least put things in the same place, ....
@@ -85,6 +99,8 @@ from project root:
 ## package.json
 
 The **name** attribute from your package.json is used for nameing distribution files created by webpack.  The camel cased name attribute from package.json is also used as the default output.library for webpack config.  The **main** attribute from package.json file is used as default **entry** for webpack config.  
+
+
 
 ## webpack.\*.config
 
