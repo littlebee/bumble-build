@@ -87,7 +87,7 @@ We assume some defaults about the locations of things and if everyone at least p
 
 from project root:
 
-|path or file|content description|         
+|path or file|content description|          
 |docs/      | Generated documentation goesa here. Some directories in here will be wiped by running `grunt clean` |
 |dist/      | Generated webpack bundles go here
 |src/       | Source code for app or package |

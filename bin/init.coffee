@@ -22,7 +22,7 @@ unless Fs.existsSync('./Gruntfile.js') || Fs.existsSync('./Gruntfile.coffee')
 BUtil.installNodePackage(npmPackage, {addFlags: "--save-dev"}) for npmPackage in NPM_DEV_PACKAGES
 BUtil.systemCmd("grunt")
 
-console.log "\n\nAll done.  You need to install grunt-cli globally like `sudo npm install -g grunt-cli` \n\n\n"
+console.log "\n\nAll done.  You may need to install grunt-cli globally like `sudo npm install -g grunt-cli` \n\n\n"
   
 
 
