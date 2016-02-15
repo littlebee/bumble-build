@@ -1,6 +1,6 @@
 {
   "name": "bumble-build",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A build setup using grunt, webpack, bumble-docs, bumble-test, ... that proabably will not work with your code.",
   "main": "index.js",
   "scripts": {
@@ -67,6 +67,5 @@
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.1"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
