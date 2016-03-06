@@ -12,7 +12,7 @@ NPM_DEV_PACKAGES = [
   "grunt","grunt-available-tasks","grunt-coffee-react","grunt-contrib-clean","grunt-contrib-coffee",
   "grunt-contrib-cssmin","grunt-contrib-watch","grunt-newer","grunt-react","grunt-scp","grunt-shell",
   "grunt-sync", "grunt-webpack"
-  "babel-core", "babel-loader", "babel-preset-react", "babel-preset-es2015"
+  "babel-core", "babel-loader", "babel-preset-react", "babel-preset-es2015", "coffee-loader", "cjsx-loader"
 ]
   
 unless Fs.existsSync('./Gruntfile.js') || Fs.existsSync('./Gruntfile.coffee') 
