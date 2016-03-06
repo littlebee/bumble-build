@@ -3,8 +3,6 @@
   webpack setup and external grunt tasks borrowed from:
     https://github.com/felixhao28/using-coffee-react-for-frontend-dev-walkthrough
 
-  unusused tasks from zuKeeper.  TODO: remove them if not needed
-
 ###
 
 Path = require('path')
@@ -61,7 +59,7 @@ module.exports = (grunt, initConfig={}) ->
         options:
           # should gracefully fail if it doesn't find zukeeper src.  see comment at top of the script
           failOnError: false
-        command: 'coffee ./scripts/deployToZukeeper.coffee'
+        command: 'coffee ./scripts/deploy.coffee'
       
       npmInstall:
         command: 'npm install'
