@@ -1,3 +1,9 @@
+## [0.3.1](https://github.com/littlebee/bumble-build.git/compare/0.3.0...0.3.1) (2016-04-102)
+
+
+### Other Commits
+* [419c1c3](https://github.com/littlebee/bumble-build.git/commit/419c1c3971b2d2617098636311660c4bd8df83ad) correct underscore inclusion in webpack config
+
 ## [0.3.0](https://github.com/littlebee/bumble-build.git/compare/0.2.4...0.3.0) (2016-03-66)
 
 
