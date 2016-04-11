@@ -71,9 +71,9 @@ module.exports = _.defaultsDeep userConfig,
     },{
       'underscore': {
         root: "_"
-        commonjs2: '_'
-        commonjs: '_'
-        amd: '_'
+        commonjs2: 'underscore'
+        commonjs: 'underscore'
+        amd: 'underscore'
       }
     }
   ]
