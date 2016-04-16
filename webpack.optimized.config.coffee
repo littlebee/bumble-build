@@ -10,8 +10,15 @@ Path = require("path")
 
 baseConfig = require('./webpack.config')
 
-userConfigFile = './__webpack.optimized.config'
-userConfig = if fs.existsSync(userConfigFile) then require(userConfigFile) else {}
+requireFile = './__webpack.optimized.config'
+configFile =  Path.join("node_modules/bumble-build/", '__webpack.optimized.config')
+
+userConfig = if fs.existsSync(configFile + '.js') || fs.existsSync(configFile + '.coffee') 
+  test = require(requireFile) 
+else 
+  {}
+
+
 # assume run from project root this the user of this package's package
 userPackage = JSON.parse(fs.readFileSync('package.json'))
 

@@ -23,8 +23,13 @@ for confFile in Glob.sync('./webpack.*', nodir: true)
   # console.log "copying #{confFile} to node_modules/bumble-test"
   fs.copySync(confFile, Path.join("node_modules/bumble-build/", "__#{Path.basename(confFile)}"))
 
-configFile = './__webpack.config'
-userConfig = if fs.existsSync(configFile) then require(configFile) else {}
+requireFile = './__webpack.config'
+configFile =  Path.join("node_modules/bumble-build/", '__webpack.config')
+
+userConfig = if fs.existsSync(configFile + '.js') || fs.existsSync(configFile + '.coffee') 
+  test = require(requireFile) 
+else 
+  {}
 
 module.exports = _.defaultsDeep userConfig,
   cache: true
