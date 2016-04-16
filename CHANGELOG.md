@@ -1,3 +1,9 @@
+## [0.3.3](https://github.com/littlebee/bumble-build.git/compare/0.3.2...0.3.3) (2016-04-107)
+
+
+### Bugs Fixed in this Release
+* [106e37c](https://github.com/littlebee/bumble-build.git/commit/106e37c94c3c1fd6d36feecebcfc982e25a2adb9)  fix issues with requiring user webpack config
+
 ## [0.3.2](https://github.com/littlebee/bumble-build.git/compare/0.3.1...0.3.2) (2016-04-107)
 
 
