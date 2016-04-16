@@ -1,3 +1,9 @@
+## [0.3.2](https://github.com/littlebee/bumble-build.git/compare/0.3.1...0.3.2) (2016-04-107)
+
+
+### Other Commits
+* [4007cd1](https://github.com/littlebee/bumble-build.git/commit/4007cd155208c2e33367ae5226af646c29357700) update version of bumble-docs to latest
+
 ## [0.3.1](https://github.com/littlebee/bumble-build.git/compare/0.3.0...0.3.1) (2016-04-102)
 
 
