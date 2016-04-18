@@ -142,6 +142,9 @@ module.exports = _.defaultsDeep userConfig,
         test: /\.(png|jpg|gif)$/
         loader: 'url-loader?limit=8192' # inline base64 URLs for <=8k images, direct URLs for the rest
         #test: /\.jpe?g$|\.gif$|\.png|\.ico$/, loader: 'file' 
+      ,
+        test: /\.json$/
+        loader: 'json'
     ]
   plugins: [
     # #  this adds a lot of code to the bundle for hot loading feature
