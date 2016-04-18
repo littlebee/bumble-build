@@ -1,3 +1,12 @@
+## [0.3.4](https://github.com/littlebee/bumble-build.git/compare/0.3.3...0.3.4) (2016-04-109)
+
+
+### New Features
+* [19a3f35](https://github.com/littlebee/bumble-build.git/commit/19a3f35d7ada8fef9156ced20f8e24d7b531f5ed)  adds default support for json loader
+
+### Other Commits
+* [909813d](https://github.com/littlebee/bumble-build.git/commit/909813dffc5885fb43c72aa025542af3516a85a8) update bumble-docs to latest
+
 ## [0.3.3](https://github.com/littlebee/bumble-build.git/compare/0.3.2...0.3.3) (2016-04-107)
 
 
