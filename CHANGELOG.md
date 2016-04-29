@@ -1,3 +1,9 @@
+## [0.3.5](https://github.com/littlebee/bumble-build.git/compare/0.3.4...0.3.5) (2016-04-120)
+
+
+### Other Commits
+* [b1b203c](https://github.com/littlebee/bumble-build.git/commit/b1b203c5e4c41dc7ca59d4e3c5a6c99211622a0b) fix grunt version at 0.4.5 because 1.0 breaks several contrib packages dependencies
+
 ## [0.3.4](https://github.com/littlebee/bumble-build.git/compare/0.3.3...0.3.4) (2016-04-109)
 
 
