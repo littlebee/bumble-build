@@ -1,3 +1,6 @@
+## [0.3.6](https://github.com/littlebee/bumble-build.git/compare/0.3.5...0.3.6) (2016-05-123)
+testing publish package
+
 ## [0.3.5](https://github.com/littlebee/bumble-build.git/compare/0.3.4...0.3.5) (2016-04-120)
 
 
