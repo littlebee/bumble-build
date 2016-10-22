@@ -27,7 +27,7 @@ requireFile = './__webpack.config'
 configFile =  Path.join("node_modules/bumble-build/", '__webpack.config')
 
 userConfig = if fs.existsSync(configFile + '.js') || fs.existsSync(configFile + '.coffee') 
-  test = require(requireFile) 
+  require(requireFile) 
 else 
   {}
 
