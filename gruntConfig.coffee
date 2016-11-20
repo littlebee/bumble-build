@@ -22,7 +22,7 @@ module.exports = (grunt, initConfig={}) ->
   pkg = grunt.file.readJSON("package.json")
 
   # configuration
-  grunt.initConfig
+  _.defaultsDeep initConfig, 
     pkg: pkg
 
     # args to initConfig method are the tasks
@@ -37,14 +37,11 @@ module.exports = (grunt, initConfig={}) ->
       options: 
         shorthandCompacting: false,
         keepBreaks: true
-      
       distrib: 
         files: 
           "dist/#{pkg.name}.css": [
             'css/**/*.css'
           ]
-       
-    
     shell:
       buildExamples:
         command: bumbleScriptCommand('buildExamples.coffee')
@@ -90,6 +87,7 @@ module.exports = (grunt, initConfig={}) ->
       distrib: require("./webpack.config.coffee")
       optimize: require("./webpack.optimized.config.coffee")
 
+  grunt.initConfig initConfig
 
   # tasks
   grunt.registerTask 'test', ["shell:test"]
