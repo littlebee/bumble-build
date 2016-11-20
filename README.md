@@ -63,8 +63,15 @@ you can also get more fancy and make modifications / additions to the standard c
 BumbleBuild = require('bumble-build')
 
 module.exports = (grunt) -> 
-  bbConfig = BumbleBuild.gruntConfig(grunt)
-  
+  bbConfig = module.exports = (grunt) -> BumbleBuild.gruntConfig grunt,
+    # change where we get css files from so we don't pick up the docs dir
+    cssmin:
+      distrib: 
+        files:    
+          "dist/react-datum.css": [
+            'css/react-datum/*.css'
+          ]
+
   shellConfig = grunt.config.get('shell')
   shellConfig.distrib = ``
     command: 'coffee -o lib/ src/'
