@@ -1,3 +1,12 @@
+## [0.4.0](https://github.com/littlebee/bumble-build.git/compare/0.3.6...0.4.0) (2016-11-325)
+
+
+### Other Commits
+* [12e9676](https://github.com/littlebee/bumble-build.git/commit/12e967655cd64b227754d0da3023efd318a6b230) cleanup - remove unneccesary presets on js/jsx remove console.log debugging
+* [e516e14](https://github.com/littlebee/bumble-build.git/commit/e516e14c3fa1cf5124e80eeaf1163fce98ff1e20) simplify passing passing partial grunt config into BumbleBuild.gruntConfig
+* [c1bd524](https://github.com/littlebee/bumble-build.git/commit/c1bd5246e348c193dc3b8cc5caf1d351183b8a12) support for user modified loaders and externals without having to repeat all of default config loaders and externals
+* [47dc858](https://github.com/littlebee/bumble-build.git/commit/47dc85826975fdb5eae9a0731eb7b02eb9148784) lock down versions of installed dev packages to currently used by react-datum. remove unused var in init
+
 ## [0.3.6](https://github.com/littlebee/bumble-build.git/compare/0.3.5...0.3.6) (2016-05-123)
 testing publish package
 
