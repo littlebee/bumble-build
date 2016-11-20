@@ -66,7 +66,7 @@ externalsIndex = {
   }
 }
 
-console.log externalsIndex
+# console.log externalsIndex
   
 for userExternal of (userConfig.externals || [])
   key = _.keys(userExternal)[0] 
@@ -79,7 +79,7 @@ externals[key] = value for key, value of externalsIndex
 
 loaders = [
   # 
-  # DON'T USE THIS  if you do a require(`../css/someFile.css`) that file will fail to load in tests
+  # DON'T WEBPACK CSS.  if you do a require(`../css/someFile.css`) that file will fail to load in tests
   # If you need to include CSS for a component of this lib:
   #   - keep it minimal (let our users style and format)
   #   - please don't use inline styles as they are difficult for our user to override
@@ -88,6 +88,7 @@ loaders = [
   #   test: /\.css$/                         # required to write "require("./someFile.css")"
   #   loader: "style-loader!css-loader"
   # ,
+  
   # required for bootstrap icons
   test: /\.(woff|woff2)$/
   loader: "url-loader?prefix=font/&limit=5000&mimetype=application/font-woff"
@@ -121,11 +122,7 @@ loaders = [
   loader: 'coffee-loader' 
 ,
   test: /\.jsx?$/,
-  exclude: /node_modules/,
   loader: 'babel-loader',
-  query: {
-    presets:[ 'es2015', 'react', 'stage-2' ]
-  }
 ,
   test: /\.(png|jpg|gif)$/
   loader: 'url-loader?limit=8192' # inline base64 URLs for <=8k images, direct URLs for the rest
@@ -185,5 +182,4 @@ exports = _.defaultsDeep userConfig,
     #    except: ['$super', '$', 'exports', 'require']
   ]
 
-console.log exports
 module.exports = exports
