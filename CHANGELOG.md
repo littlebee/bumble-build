@@ -1,3 +1,10 @@
+## [0.5.0](https://github.com/littlebee/bumble-build.git/compare/0.4.0...0.5.0) (2016-11-326)
+
+
+### Other Commits
+* [51f090b](https://github.com/littlebee/bumble-build.git/commit/51f090bf10fb746e8c0b3a6fbf7124fccc46528c) update bumble-docs to 0.5.0
+* [db1009c](https://github.com/littlebee/bumble-build.git/commit/db1009cf7bebf048d030f7f7995bb0981eee213b) show example of how to override a single grunt config thing
+
 ## [0.4.0](https://github.com/littlebee/bumble-build.git/compare/0.3.6...0.4.0) (2016-11-325)
 
 
