@@ -1,3 +1,9 @@
+## [0.6.0](https://github.com/littlebee/bumble-build.git/compare/0.5.0...0.6.0) (2017-01-29)
+No longer builds docs by default.
+
+### Other Commits
+* [f07a6a2](https://github.com/littlebee/bumble-build.git/commit/f07a6a2396197aed2856edfbd7d711d035918d72) do not build docs unless explicit
+
 ## [0.5.0](https://github.com/littlebee/bumble-build.git/compare/0.4.0...0.5.0) (2016-11-326)
 
 
