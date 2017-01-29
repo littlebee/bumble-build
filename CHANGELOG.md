@@ -1,3 +1,9 @@
+## [0.6.1](https://github.com/littlebee/bumble-build.git/compare/0.6.0...0.6.1) (2017-01-29)
+
+
+### Other Commits
+* [831e858](https://github.com/littlebee/bumble-build.git/commit/831e8589188b1cb431b07ad269c14fee29097f3c) do not clean docs dir on clean either
+
 ## [0.6.0](https://github.com/littlebee/bumble-build.git/compare/0.5.0...0.6.0) (2017-01-29)
 No longer builds docs by default.
 
