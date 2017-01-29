@@ -17,7 +17,7 @@ This package is selfishly supported.  I hate repeating code.  This is the grunt 
 
 See react-datum [grunt file](https://github.com/zulily/react-datum/blob/master/Gruntfile.coffee), [webpack.config](https://github.com/zulily/react-datum/blob/master/webpack.config.coffee) for example usage.
 
-See [bumble-docs](https://github.com/littlebee/bumble-docs) for information on documentation generator used.
+See [bumble-docs](https://github.com/littlebee/bumble-docs) for information on documentation generator used.  Note that docs and examples are not built by default. You will need to run `grunt docs` from your project root and you may only want to do that in your gh-pages branch.  
 
 ## Grunt
 

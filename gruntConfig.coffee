@@ -93,5 +93,5 @@ module.exports = (grunt, initConfig={}) ->
   grunt.registerTask 'test', ["shell:test"]
   grunt.registerTask 'distrib', ['cssmin:distrib', 'webpack:distrib', 'webpack:optimize','shell:deploy']
   grunt.registerTask 'docs',  ['shell:buildDocIndex', 'shell:buildApiDocs', 'shell:buildExamples']
-  grunt.registerTask 'build', ['docs', 'distrib'] 
+  grunt.registerTask 'build', ['distrib'] 
   grunt.registerTask 'default', ['availabletasks']
