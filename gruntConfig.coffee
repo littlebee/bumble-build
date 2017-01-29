@@ -29,10 +29,6 @@ module.exports = (grunt, initConfig={}) ->
     clean:
       distrib: ["dist/#{pkg.name}.*"]
       
-      # these are the things created by bumble-docs/scripts
-      docs: ["docs/**/*"]
-      
-        
     cssmin: 
       options: 
         shorthandCompacting: false,
