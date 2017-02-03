@@ -1,3 +1,9 @@
+## [0.6.2](https://github.com/littlebee/bumble-build.git/compare/0.6.1...0.6.2) (2017-02-3)
+updated depencies
+
+### Other Commits
+* [0740543](https://github.com/littlebee/bumble-build.git/commit/07405431bd69d1039b2c2117b20a7a16225c360e) upgrade bumble-util to 0.2.1; add .bablerc
+
 ## [0.6.1](https://github.com/littlebee/bumble-build.git/compare/0.6.0...0.6.1) (2017-01-29)
 
 
