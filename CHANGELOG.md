@@ -1,3 +1,10 @@
+## [0.6.3](https://github.com/littlebee/bumble-build.git/compare/0.6.2...0.6.3) (2017-02-3)
+
+
+### Other Commits
+* [2806dd7](https://github.com/littlebee/bumble-build.git/commit/2806dd7035fbff735447c1c45ae9f27fc0723bd8) typo correction in last change log
+* [0bafdec](https://github.com/littlebee/bumble-build.git/commit/0bafdec7307e4e9803540452e16480303edc5fa8) update grunt available task messaging to reflect change in not building docs by default
+
 ## [0.6.2](https://github.com/littlebee/bumble-build.git/compare/0.6.1...0.6.2) (2017-02-3)
 updated dependencies
 
