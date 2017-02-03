@@ -33,7 +33,7 @@
     "bumble-docs": "0.5.0",
     "bumble-strings": "0.5.1",
     "bumble-test": "0.1.6",
-    "bumble-util": "0.2.0",
+    "bumble-util": "0.2.1",
     "cjsx-loader": "2.0.1",
     "coffee-loader": "0.7.2",
     "coffee-script": "1.10.0",
