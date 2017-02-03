@@ -67,10 +67,10 @@ module.exports = (grunt, initConfig={}) ->
           filter: 'include'
           tasks: ['build', 'test', 'watch',  'clean', 'docs']
           descriptions: 
-            build: "Builds everything including docs, examples"
+            build: "Builds everything except docs & examples"
             test: "Builds everything and then run tests in /test"
-            watch: "Watch for changing files and calls build. Also watches examples and docs"
-            docs: "Build the docs. To publish to github.io, you must pull master into gh-pages"
+            watch: "Watch for changing files and calls build."
+            docs: "Build the docs. To publish to github.io, you must pull master into gh-pages and run 'grunt build docs' in the gh-pages branch"
             clean: "Remove all compiled files. Use `grunt clean build` to rebuild everything from scratch"
 
     watch:
