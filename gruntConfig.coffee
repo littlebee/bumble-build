@@ -58,7 +58,7 @@ module.exports = (grunt, initConfig={}) ->
         command: 'npm install'
       
       test:
-        command: 'node_modules/bumble-test/bin/testRunner.coffee'
+        command: 'coffee node_modules/bumble-test/bin/testRunner.coffee'
 
 
     availabletasks:
