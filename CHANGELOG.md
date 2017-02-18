@@ -1,3 +1,9 @@
+## [0.6.6](https://github.com/littlebee/bumble-build.git/compare/0.6.5...0.6.6) (2017-02-18)
+
+
+### Other Commits
+* [89a9c7b](https://github.com/littlebee/bumble-build.git/commit/89a9c7b28c702167271c9d2425610bfb701a7d95) upgrade bumble-test to 0.4.1
+
 ## [0.6.5](https://github.com/littlebee/bumble-build.git/compare/0.6.4...0.6.5) (2017-02-18)
 
 
