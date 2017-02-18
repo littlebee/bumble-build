@@ -1,3 +1,9 @@
+## [0.6.4](https://github.com/littlebee/bumble-build.git/compare/0.6.3...0.6.4) (2017-02-18)
+
+
+### Other Commits
+* [617459a](https://github.com/littlebee/bumble-build.git/commit/617459a87e90014864a833595e5a64c20b76beb6) add grunt task for coverage report
+
 ## [0.6.3](https://github.com/littlebee/bumble-build.git/compare/0.6.2...0.6.3) (2017-02-3)
 
 
