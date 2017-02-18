@@ -59,7 +59,12 @@ module.exports = (grunt, initConfig={}) ->
       
       test:
         command: 'node_modules/bumble-test/bin/testRunner.coffee'
-
+        execOptions:
+          env: {NODE_ENV: 'test'}
+        
+      coverage:
+        command: 'node_modules/.bin/istanbul report text-summary lcov'
+        
 
     availabletasks:
       tasks:
@@ -72,6 +77,7 @@ module.exports = (grunt, initConfig={}) ->
             watch: "Watch for changing files and calls build."
             docs: "Build the docs. To publish to github.io, you must pull master into gh-pages and run 'grunt build docs' in the gh-pages branch"
             clean: "Remove all compiled files. Use `grunt clean build` to rebuild everything from scratch"
+
 
     watch:
       build:
@@ -86,7 +92,7 @@ module.exports = (grunt, initConfig={}) ->
   grunt.initConfig initConfig
 
   # tasks
-  grunt.registerTask 'test', ["shell:test"]
+  grunt.registerTask 'test', ["shell:test", "shell:coverage"]
   grunt.registerTask 'distrib', ['cssmin:distrib', 'webpack:distrib', 'webpack:optimize','shell:deploy']
   grunt.registerTask 'docs',  ['shell:buildDocIndex', 'shell:buildApiDocs', 'shell:buildExamples']
   grunt.registerTask 'build', ['distrib'] 

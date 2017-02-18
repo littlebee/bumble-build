@@ -5,11 +5,12 @@ Path = require('path')
 ChildProcess = require('child_process')
 BUtil = require('bumble-util')
 
-# install needed stuff
+# These are the packages installed installed with --save-dev
 
 NPM_DEV_PACKAGES = [
-  "bumble-docs@0.5.0"
-  "bumble-test@0.1.6"
+  
+  "bumble-docs@0.5.1"
+  "bumble-test@0.3.3"
 
   "grunt@0.4.5"
   "grunt-available-tasks@0.6.1"
