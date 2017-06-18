@@ -1,3 +1,6 @@
+## [1.1.0](https://github.com/littlebee/bumble-build.git/compare/1.0.0...1.1.0) (2017-06-18)
+Adds default rule for compiling all *.cjsx or *.coffee files in src/ to lib/
+
 ## [1.0.0](https://github.com/littlebee/bumble-build.git/compare/0.6.6...1.0.0) (2017-06-17)
 
 
