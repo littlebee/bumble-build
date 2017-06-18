@@ -3,6 +3,7 @@
   "version": "0.6.6",
   "description": "A build setup using grunt, webpack, bumble-docs, bumble-test, ... that proabably will not work with your code.",
   "main": "index.js",
+  "bin": "./bin/init.coffee",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
