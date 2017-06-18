@@ -1,3 +1,9 @@
+## [1.0.0](https://github.com/littlebee/bumble-build.git/compare/0.6.6...1.0.0) (2017-06-17)
+
+
+### Other Commits
+* [486f374](https://github.com/littlebee/bumble-build.git/commit/486f37488fcb3e2d7b56433a9c1c2406b89e21c6) breaking change: switched from trying to host and extend custom webpack and gruntfile configs to just copying the boilerplate files down to project root
+
 ## [0.6.6](https://github.com/littlebee/bumble-build.git/compare/0.6.5...0.6.6) (2017-02-18)
 
 
