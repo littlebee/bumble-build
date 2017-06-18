@@ -40,6 +40,16 @@ module.exports = (grunt) ->
     # args to initConfig method are the tasks
     clean:
       distrib: ["dist/#{pkg.name}.*"]
+
+    cjsx:
+      build:
+        files: [
+          expand: true
+          cwd: 'src'
+          src: ['**/*.cjsx', '**/*.coffee']
+          dest: 'lib'
+          ext: '.js'
+        ]
       
     cssmin:
       options:
@@ -113,5 +123,5 @@ module.exports = (grunt) ->
   grunt.registerTask 'test', ["shell:test", "shell:coverage"]
   grunt.registerTask 'distrib', ['cssmin:distrib', 'webpack:distrib', 'webpack:optimize','shell:deploy']
   grunt.registerTask 'docs',  ['shell:buildDocIndex', 'shell:buildApiDocs', 'shell:buildExamples']
-  grunt.registerTask 'build', ['shell:npmInstall', 'distrib']
+  grunt.registerTask 'build', ['shell:npmInstall', 'newer:cjsx:build', 'distrib']
   grunt.registerTask 'default', ['availabletasks']
