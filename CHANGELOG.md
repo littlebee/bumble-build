@@ -1,3 +1,9 @@
+## [1.2.0](https://github.com/littlebee/bumble-build.git/compare/1.1.0...1.2.0) (2018-04-5)
+
+
+### Other Commits
+* [13ae3d9](https://github.com/littlebee/bumble-build.git/commit/13ae3d995283fe23069512eed20ad8dd79ea51af) update packages for react 16 support
+
 ## [1.1.0](https://github.com/littlebee/bumble-build.git/compare/1.0.0...1.1.0) (2017-06-18)
 Adds default rule for compiling all *.cjsx or *.coffee files in src/ to lib/
 
