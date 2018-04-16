@@ -13,7 +13,6 @@
 ###
 
 Path = require('path')
-_ = require('lodash')
 
 CSS_FILES_TO_DISTRIB = [
   'css/**/*.css'

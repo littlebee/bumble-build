@@ -9,7 +9,7 @@ BUtil = require('bumble-util')
 
 NPM_DEV_PACKAGES = [
   
-  "bumble-docs@0.5.3"
+  "bumble-docs@0.9.1"
   "bumble-test@0.4.1"
 
   "grunt@0.4.5"

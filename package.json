@@ -31,7 +31,7 @@
     "babel-loader": "6.1.0",
     "babel-preset-es2015": "6.1.18",
     "babel-preset-react": "6.1.18",
-    "bumble-docs": "0.6.1",
+    "bumble-docs": "0.9.1",
     "bumble-strings": "0.5.1",
     "bumble-test": "0.4.2",
     "bumble-util": "0.2.1",
