@@ -1,3 +1,9 @@
+## [1.2.1](https://github.com/littlebee/bumble-build.git/compare/1.2.0...1.2.1) (2018-04-16)
+
+
+### Other Commits
+* [e2690d5](https://github.com/littlebee/bumble-build.git/commit/e2690d55f97acf2654840a454fe6bd6a657c8d86) upgrade bumble-docs to 0.9.1 (marked to 0.3.9) to appease github nanny bot
+
 ## [1.2.0](https://github.com/littlebee/bumble-build.git/compare/1.1.0...1.2.0) (2018-04-5)
 
 
