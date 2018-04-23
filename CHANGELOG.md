@@ -1,3 +1,9 @@
+## [1.2.3](https://github.com/littlebee/bumble-build.git/compare/1.2.2...1.2.3) (2018-04-23)
+
+
+### Other Commits
+* [dce3785](https://github.com/littlebee/bumble-build.git/commit/dce3785ede59f2b0c98a96f6f1d9151ea5ef5650) upgrade to latest bumble-docs to mitigate ES2015 preset issue
+
 ## [1.2.2](https://github.com/littlebee/bumble-build.git/compare/1.2.1...1.2.2) (2018-04-22)
 
 
