@@ -1,6 +1,6 @@
 {
   "name": "bumble-build",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "A build setup using grunt, webpack, bumble-docs, bumble-test, ... that proabably will not work with your code.",
   "main": "index.js",
   "bin": "./bin/init.coffee",
